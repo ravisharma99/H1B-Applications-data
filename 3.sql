@@ -1,0 +1,1 @@
+hive -e select soc_name, count(*) as no_of_positions from h1b.h1b_final where lower(job_title) like '%data scientist%' and lower(case_status) like '%certified%' group by soc_name order by no_of_positions desc limit 1;
