@@ -1,2 +1,0 @@
-sqoop export --connect jdbc:mysql://localhost/h1b --username root --password toor --table eleven -m 1 --export-dir /h1boutput/Ten/part-r-00000
-
