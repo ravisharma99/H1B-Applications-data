@@ -5,11 +5,3 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '\t'
 STORED AS TEXTFILE
 select year, count(*) as c from h1b_final group by year;
-
---year	c
---2011	358767
---2013	442114
---2015	618727
---2012	415607
---2014	519427
---2016	647803
