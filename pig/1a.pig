@@ -22,16 +22,3 @@ b = foreach b generate AVG(a.dif) as avg_diff;
 b = foreach b generate case when avg_diff > 0 then '*******************************************************************************\nThe number of petitions with Data Engineer job title is increasing over time.\n*******************************************************************************' else 'The number of petitions with Data Engineer job title is not increasing over time.' end;
 
 store b  into  '/home/hduser/Documents/h1boutput/1a';
-
-
-
-/*
-
-(2011,60,2012,81)	21
-(2012,81,2013,151)	70
-(2013,151,2014,249)	98
-(2014,249,2015,394)	145
-(2015,394,2016,786)	392
-
-
-*/
